@@ -58,6 +58,10 @@ function Navbar() {
             <li onClick={removeActive}>
               <a href='/signin' className={`${styles.navLink}`}>Register</a>
             </li>
+            <li id="language-menu" >
+                <div class='language-setting'>
+                    <div id="google_translate_element"></div>
+        </div></li>
           </ul>
 
 

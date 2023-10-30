@@ -142,7 +142,7 @@ const About = ({ lightBg, id, imgStart, topLine, headline, description, buttonLa
     return (
         <>
             <AboutContainer lightBg={homeObjOne.lightBg} id={homeObjOne.id} >
-                <AboutWrapper>
+                <AboutWrapper id="aboutSection">
                     <AboutRow imgStart={homeObjOne.imgStart}>
                         <Column1>
                             <TextWrapper

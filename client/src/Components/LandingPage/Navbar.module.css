@@ -118,3 +118,19 @@ a {
   .navMenu li:hover .navLink{
       color: #f7bd00;
   }
+  div#google_translate_element div.goog-te-gadget-simple{
+    background-color: #fff;
+    border-color: #222;
+    margin-right: 10px;
+  }
+  .translated-ltr{margin-top:-40px;}
+.translated-ltr{margin-top:-40px;}
+.goog-te-banner-frame {display: none;margin-top:-20px;}
+
+.goog-logo-link {
+   display:none !important;
+} 
+
+.goog-te-gadget{
+   color: transparent !important;
+}
