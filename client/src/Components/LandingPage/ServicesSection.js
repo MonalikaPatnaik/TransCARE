@@ -137,7 +137,7 @@ const ServicesSection = () => {
           <Paragraph>
           Navigating Government Policies for Transgender Rights and Equality.
           </Paragraph>
-          <Button>Learn More</Button>
+          <Link to="./scholarships"> <Button >Learn More</Button></Link>
         </ServiceCard>
       </ServiceGrid>
     </Services>

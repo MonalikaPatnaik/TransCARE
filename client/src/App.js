@@ -11,12 +11,13 @@ import BookList from "./Components/BookList/BookList";
 import SigninPage from './Pages/SignIn';
 import SignupPage from './Pages/Signup';
 import ContactPage from './Pages/contact';
+import Scholarlist from './Pages/scholarlist';
 function App() {
   return (
     // <ChakraProvider>
       <AppProvider>
         <Router>
-          <Navbar />
+          {/* <Navbar /> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/library" element={<Library />} />
@@ -25,6 +26,7 @@ function App() {
             <Route path="/signin" element={<SigninPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/scholarships" element={<Scholarlist />} />
           </Routes>
         </Router>
       </AppProvider>
