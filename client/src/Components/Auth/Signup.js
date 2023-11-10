@@ -110,6 +110,7 @@ const SignUp = () => {
           <SignUpContainer>
             <SignUpForm>
               <SignUph1>Create account</SignUph1>
+              <form action="/signup"method="POST">
               <FormInput
                 onChange={(e) => setData({ ...data, name: e.target.value })}
                 id="FullNameInput"
@@ -205,7 +206,7 @@ const SignUp = () => {
               >
                 Sign Up
               </SignUpButton>
-
+              </form>
               <NavLink to="/signin">
                 <p style={paragraphStyles}>
                   Already having an account? Login Here

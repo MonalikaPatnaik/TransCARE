@@ -75,31 +75,7 @@ const SignIn = () => {
           <SignInContainer>
             <SignInForm>
               <SignInh1>Sign in</SignInh1>
-              <RadioContainer>
-                <RadioInput
-                  type="radio"
-                  id="user"
-                  name="role"
-                  value="user"
-                  checked={!isAdmin}
-                  onChange={() => setIsAdmin(false)}
-                />
-                <RadioLabel htmlFor="user">User</RadioLabel>
-
-                <RadioInput
-                  type="radio"
-                  id="admin"
-                  name="role"
-                  value="admin"
-                  checked={isAdmin}
-                  onChange={() => setIsAdmin(true)}
-                />
-                <RadioLabel htmlFor="admin">Admin</RadioLabel>
-              </RadioContainer>
-              <SignInLabel htmlFor="email">
-                {" "}
-                {isAdmin ? "Admin Email" : "Email"}
-              </SignInLabel>
+              <form action="/signin"method="GET">
               <SignInInput
                 onChange={(e) => setData({ ...data, email: e.target.value })}
                 type="email"
@@ -144,6 +120,7 @@ const SignIn = () => {
               >
                 Sign In
               </SignInButton>
+              </form>
               <Error>{errMessage}</Error>
               <NavLink to="/signin/forgotPassword">
                 <ForgotPassword>Forgot password?</ForgotPassword>

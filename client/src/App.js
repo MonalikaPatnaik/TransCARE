@@ -12,9 +12,11 @@ import SigninPage from './Pages/SignIn';
 import SignupPage from './Pages/Signup';
 import ContactPage from './Pages/contact';
 import Scholarlist from './Pages/scholarlist';
+import Profile from './Pages/profile';
 function App() {
   return (
     // <ChakraProvider>
+    
       <AppProvider>
         <Router>
           {/* <Navbar /> */}
@@ -27,6 +29,7 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/scholarships" element={<Scholarlist />} />
+        <Route path="/profile" element={<Profile />} />
           </Routes>
         </Router>
       </AppProvider>
