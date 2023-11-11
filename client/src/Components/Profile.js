@@ -49,7 +49,11 @@ const Profile = () => {
             <>
               <Grid item md={4} textAlign="center">
                 <Avatar src={selectedImage || user.picture} alt={user.name} sx={{ width: 200, height: 200, margin: 'auto', borderRadius: '50%' }} />
-                <TextField type="file" accept="image/*" variant="outlined" sx={{ marginTop: 3 }} onChange={handleImageChange} />
+                <TextField 
+                type="file" 
+                accept="image/*" 
+                variant="outlined" 
+                sx={{ marginTop: 3 }} onChange={handleImageChange} />
               </Grid>
               <Grid item md={8}>
                 <Typography variant="h4">{user.name}</Typography>

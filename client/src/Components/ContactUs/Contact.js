@@ -7,7 +7,7 @@ import location from '../../images/location.png';
 const Contact = () => {
   return (
     <section>
-      <div className="container">
+      <div className="contact-container">
         <div className="contactInfo">
           <div>
             <h2>Contact Info</h2>
