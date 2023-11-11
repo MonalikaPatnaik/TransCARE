@@ -28,7 +28,7 @@ const Footer = () => {
           
             <FooterLinkItems>
   <FooterLinkTitle>Our Office</FooterLinkTitle>
-  <footerLinkItems>
+  <FooterLinkItems>
   <ListItem>
       <ListItemIcon>
         <LocationOn style={{ marginRight: '0.5rem',color:' #f7bd00' }} />
@@ -47,7 +47,7 @@ const Footer = () => {
       </ListItemIcon>
       <ListItemText primary="agrotechiam354@gmail.com" />
     </ListItem>
-  </footerLinkItems>
+  </FooterLinkItems>
 </FooterLinkItems>
             
            

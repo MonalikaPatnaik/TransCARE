@@ -97,7 +97,7 @@ function Navbar() {
              
             )}
             <li id="language-menu" >
-                <div class='language-setting'>
+                <div className='language-setting'>
                     <div id="google_translate_element"></div>
         </div></li>
           </ul>
