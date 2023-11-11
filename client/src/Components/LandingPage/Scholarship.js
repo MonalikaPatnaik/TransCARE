@@ -78,7 +78,7 @@ const ScholarshipComponent = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:8000/scholarships')
+    fetch('https://transcare.onrender.com/scholarships')
       .then(response => {
         if (!response.ok) {
           console.log('Network response was not ok');
