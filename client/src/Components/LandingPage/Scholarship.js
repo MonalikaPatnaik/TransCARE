@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import imageUrl from '../../images/scholarhat.png';
+import Loading from '../Loader/Loader';
 
 const cardContainerStyle = {
   display: 'flex',
@@ -74,6 +75,7 @@ const headingStyle = {
 const ScholarshipComponent = () => {
   const [scholarships, setScholarships] = useState([]);
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch('http://localhost:8000/scholarships')
@@ -86,12 +88,18 @@ const ScholarshipComponent = () => {
       .then(data => {
         console.log('Received data:', data);
         setScholarships(data);
+        setLoading(false);
       })
       .catch(error => {
         console.error('Error fetching scholarships:', error);
+        setLoading(false);
       });
-  }, []); // Empty dependency array ensures useEffect runs once after the initial render
+  }, []);
 
+  if (loading) {
+    return <Loading />;
+  }
+  
   return (
     <>
       <h1 style={headingStyle}>Scholarships</h1>

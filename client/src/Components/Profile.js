@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Container, Grid, Avatar, Typography, TextField, Button } from '@mui/material';
-
+import Loading from './Loader/Loader';
 const Profile = () => {
-  const { user, isAuthenticated } = useAuth0();
+  const { user, isAuthenticated,isLoading } = useAuth0();
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -29,7 +29,9 @@ const Profile = () => {
       reader.readAsDataURL(file);
     }
   };
-
+if(isLoading){
+  return <Loading />
+}
   return (
     <Container sx={{ marginTop: '10%', boxShadow: '0 .5rem 1rem rgba(0,0,0,.15)', marginRight: '10%', marginLeft: '10%', marginBottom: '20%', border: '2px solid rgb(209, 225, 250)', paddingBottom: '50px' }}>
       {isAuthenticated && (
@@ -56,7 +58,7 @@ const Profile = () => {
                 sx={{ marginTop: 3 }} onChange={handleImageChange} />
               </Grid>
               <Grid item md={8}>
-                <Typography variant="h4">{user.sub}</Typography>
+                <Typography variant="h4">{user.name}</Typography>
                 <Typography>{user.email}</Typography>
               </Grid>
             </>

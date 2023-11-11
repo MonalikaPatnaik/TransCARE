@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context.';
@@ -7,6 +7,7 @@ import Home from './Pages/Home';
 import Library from './Pages/library';
 import Navbar from './Components/LandingPage/Navbar';
 import BookDetails from "./Components/BookDetails/BookDetails";
+import Loading from './Components/Loader/Loader';
 import BookList from "./Components/BookList/BookList";
 import SigninPage from './Pages/SignIn';
 import SignupPage from './Pages/Signup';
@@ -15,9 +16,22 @@ import Scholarlist from './Pages/scholarlist';
 import Profile from './Pages/profile';
 import ChatComponent from './Components/TransTalk/forum';
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading by setting a timeout
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the timeout duration as needed
+
+    return () => clearTimeout(timer); // Clear the timeout on component unmount
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
   return (
-    // <ChakraProvider>
-    
+
       <AppProvider>
         <Router>
           {/* <Navbar /> */}
@@ -35,7 +49,7 @@ function App() {
           </Routes>
         </Router>
       </AppProvider>
-    //  </ChakraProvider>
+    
   );
 }
 

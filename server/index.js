@@ -1,4 +1,6 @@
-const PORT = 8000
+const dotenv = require('dotenv');
+dotenv.config();
+const PORT = process.env.PORT || 8000
 const mongoose = require('mongoose');
 const express = require('express')
 const axios = require('axios')
@@ -6,11 +8,10 @@ const cheerio = require('cheerio')
 const app = express()
 const cors = require('cors');
 const link='https://www.buddy4study.com';
-const Routes = require('./routes/user.js');
 
 const scholarships = []
-const dotenv = require('dotenv');
-dotenv.config();
+
+
 const user = process.env.MONGO_DB_USER;
 const password = process.env.MONGO_DB_PASSWORD;
 app.use(cors());
@@ -47,7 +48,7 @@ mongoose.connect(`mongodb+srv://monalikapatnaik:PxWccyAzXBKh1P58@user.15pwrly.mo
               });
 
         })
-app.use('/', Routes);
+
 app.get('/scholarships', (req, res) => {
     res.setHeader('Cache-Control', 'no-store');
     res.json(scholarships)
