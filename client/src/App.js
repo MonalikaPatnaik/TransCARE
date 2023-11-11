@@ -13,6 +13,7 @@ import SignupPage from './Pages/Signup';
 import ContactPage from './Pages/contact';
 import Scholarlist from './Pages/scholarlist';
 import Profile from './Pages/profile';
+import ChatComponent from './Components/TransTalk/forum';
 function App() {
   return (
     // <ChakraProvider>
@@ -30,6 +31,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/scholarships" element={<Scholarlist />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/forum" element={<ChatComponent />} />
           </Routes>
         </Router>
       </AppProvider>

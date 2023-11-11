@@ -56,7 +56,7 @@ const Profile = () => {
                 sx={{ marginTop: 3 }} onChange={handleImageChange} />
               </Grid>
               <Grid item md={8}>
-                <Typography variant="h4">{user.name}</Typography>
+                <Typography variant="h4">{user.sub}</Typography>
                 <Typography>{user.email}</Typography>
               </Grid>
             </>

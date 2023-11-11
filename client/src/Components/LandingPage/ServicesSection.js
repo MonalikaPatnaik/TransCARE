@@ -5,7 +5,7 @@ import CommunityForum from '../../images/forum.jpg'
 import GovtPolicies from '../../images/policies.jpg'
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-
+import { useAuth0 } from '@auth0/auth0-react';
 
 const Services = styled.section`
   padding: 30px;
@@ -106,10 +106,7 @@ const Button = styled.button`
 `;
 
 const ServicesSection = () => {
-//   const navigate = useNavigate();
-// const handleLibClick = () => {
-//   navigate("/library");
-// }
+  const { isAuthenticated, loginWithRedirect } = useAuth0();
   return (
     <Services id="featureSection">
       <Title>Our Services</Title>
@@ -129,7 +126,14 @@ const ServicesSection = () => {
           <Paragraph>
           Embrace Your Authentic Self,connecting Transgender Souls, Sharing Stories.
           </Paragraph>
-          <Button>Learn More</Button>
+          {isAuthenticated ?(
+              <Link to="./forum">
+              <Button>Learn More</Button>
+            </Link>
+          ):(
+            <Button onClick={() => loginWithRedirect()}>Learn More</Button>
+          )}
+    
         </ServiceCard>
         <ServiceCard>
           <Image src={GovtPolicies} alt="Service Icon" />

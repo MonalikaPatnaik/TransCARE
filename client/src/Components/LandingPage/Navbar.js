@@ -77,9 +77,6 @@ function Navbar() {
             </li>
             {isAuthenticated ? (
                <li>
-               {/* <Button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-     Log Out
-   </Button> */}
    <Dropdown title="My Profile" icon={<FontAwesomeIcon icon={faUser} style={{ color: '#fff' }}  />} appearance="default" style={dropdownTitleStyle}>
     <Dropdown.Item onClick={removeActive}><a href='/profile'> User profile</a>
      
