@@ -43,7 +43,7 @@ if(isLoading){
                 <TextField type="file" accept="image/*" variant="outlined" sx={{ marginTop: 3 }} onChange={handleImageChange} />
               </Grid>
               <Grid item xs={12}>
-                <Typography variant="h3">{user.name}</Typography>
+                <Typography variant="h3">{user.nickname}</Typography>
                 <Typography>{user.email}</Typography>
               </Grid>
             </Grid>
@@ -58,7 +58,7 @@ if(isLoading){
                 sx={{ marginTop: 3 }} onChange={handleImageChange} />
               </Grid>
               <Grid item md={8}>
-                <Typography variant="h4">{user.name}</Typography>
+                <Typography variant="h4">{user.nickname}</Typography>
                 <Typography>{user.email}</Typography>
               </Grid>
             </>
