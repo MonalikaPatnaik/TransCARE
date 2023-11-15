@@ -6,6 +6,7 @@ import ServicesSection from '../Components/LandingPage/ServicesSection';
 import ContributorsSection from '../Components/LandingPage/ContributorsSection';
 import Footer from '../Components/LandingPage/Footer';
 
+
 const Home = () => {
   return (
     <>
