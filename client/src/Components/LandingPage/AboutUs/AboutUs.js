@@ -92,8 +92,8 @@ const AboutUs = () => {
            polishing their technical skills and contributing to various projects from the comfort of 
            their homes over our fifty-day contribution period.
            <br/> <br/>
-           Join us at GDSC IGDTUW SNOW SCRIPT - Winter of Code ❄️ to revolutionize the Open Source 
-           domain by contributing, inspiring and 
+           Join us at TransCare 🏳️‍🌈to Open up about Homosexuality  
+            by contributing, inspiring and 
            empowering every individual!
          </Typography>
     </Grid>
