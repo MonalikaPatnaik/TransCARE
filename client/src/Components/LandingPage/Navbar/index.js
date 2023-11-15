@@ -78,7 +78,7 @@ const Navbar = () => {
     <>
       <Nav
         style={{
-          backgroundColor: scrollPosition > 0 ? "#fff" : "#fff",
+          backgroundColor: scrollPosition > 0 ? "#FAE4CD" : "#FAE4CD",
         }}
       >
         <NavbarContainer>

@@ -54,7 +54,7 @@ flex-grow: 0;
 export const NavLogo = styled.div`
   height: auto;
   width: auto;
-  color: #000;
+  color: #00008B;
   justify-self: flex-start;  
   font-size: 2rem;
   display: flex;
@@ -117,7 +117,7 @@ flex-grow: 0;
 `
 export const SubLogo = styled.span`
 font-size: 0.7rem; /* Adjust the font size as per your preference */
-color: #000;
+color: #00008B;
 @media screen and  (max-width: 468px){
   font-size: 8px;
 }
@@ -154,11 +154,11 @@ align-items: center;
 ${'' /* justify-content: center; */}
 padding: 0px 20px;
 gap: 10px;
-border:0.5px solid #FAA175;
+border:0.5px solid #FAE4CD;
 width:120px;
 height: 34px;
 
-background: linear-gradient(45deg, #FAA175, #FAA175);
+background: linear-gradient(45deg, #FAE4CD, #FAE4CD );
 border-radius: 22px;
 
 /* Inside auto layout */
@@ -167,9 +167,10 @@ flex: none;
 order: 0;
 flex-grow: 0;
 &:hover {
-  background: linear-gradient(45deg, #FAE4CD, #FAE4CD);
-  border: 0.5px solid #FAE4CD;
-  color: #FAA175;
+  background: linear-gradient(45deg, #00008B, #00008B);
+  border: 0.5px solid #00008B;
+  color: #00008B;
+  text-color: ##FAE4CD;
 }
 
 &.custom {
@@ -203,9 +204,9 @@ export const NavLinks = styled(LinkR)`
   text-decoration: none;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 22px;
-  color: #000;
+  color: #00008B;
   ${'' /* flex: none; */}
   align-items: center;
   justify-content: center;
@@ -217,6 +218,6 @@ export const NavLinks = styled(LinkR)`
   }
 
   &:hover {
-    color: #000000;
+    color: #FAE4CD;
   }
 `;
