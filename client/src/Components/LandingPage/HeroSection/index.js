@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { HeroContainer, HeroContent, HeroH1, HeroP } from "./HeroElements";
 
 import { Grid, Typography, Box } from "@mui/material";
-import heroImg from "../../../images/heroimg.png";
+import rainbow from "../../../images/rainbow.png";
+
 
 
 const HeroSection = () => {
@@ -13,12 +14,13 @@ const HeroSection = () => {
   };
 
   const customH1Styles = {
-    background: "-webkit-linear-gradient(120deg, #0aabad 20%, #FF930F 90%)",
+    background: "-webkit-linear-gradient(120deg, #00008B 20%, #FF930F 90%)",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     backgroundSize: "200%",
     backgroundPosition: "50% 50%",
-    fontSize: "64px",
+    alignItems : "center",
+    fontSize: "95px",
     fontWeight: "600",
     fontFamily: "Exo 2, sans-serif",
     color: "transparent",
@@ -43,10 +45,11 @@ const HeroSection = () => {
   const RightSubSectionJSX = (
     // Hero Image
     <img
-      src={heroImg}
+      src={rainbow}
       alt="hero_image"
       style={{
         width: "100vh",
+        margin: "0 auto",
         height: "auto",
         objectFit: "contain",
         overflow: "hidden",
@@ -56,24 +59,25 @@ const HeroSection = () => {
 
   return (
     <>
-      <Box  sx={{ position: "relative" }} 
-        style={{display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "#FAE4CD", width: "100%"}}    
-      >
-       
-        <Grid container 
-        style={{display: "flex", justifyContent: "center", alignItems: "center", width: "100%"}}
-        >
-            <Grid item xs={12} md={5} sx={{ backgroundColor: "#FAE4CD" }}>
+      <Box 
+         sx={{ position: "relative" }} 
+         style={{ display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "#FAE4CD", width: "100%" }}>
+        <Grid container style={{ width: "100%" }}>
+          <Grid item xs={12} md={6} sx={{ backgroundColor: "#FAE4CD" }}>
+          
             <HeroContainer>
-              <HeroContent>
-                <HeroH1>Welcome to Transcare</HeroH1>
-                <Typography
-                  variant="h1"
-                  color="#ffffe6"
-                  // align={}
-                  sx={customH1Styles}
-                >
-                  Web3 World
+            
+              <HeroContent
+                style={{ marginTop: "10vh", marginLeft: "5vw" }}
+              >
+              <HeroH1
+                 style={{color: '#164863' }}
+              >Celebrate Yourself</HeroH1>
+                <Typography variant="h1" color="#ffffe6" sx={customH1Styles} >
+                  STAND 
+                </Typography>
+                <Typography variant="h1" color="#ffffe6" sx={customH1Styles} >
+                  PROUD
                 </Typography>
                 <HeroP>
                   WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT
@@ -81,17 +85,13 @@ const HeroSection = () => {
                 </HeroP>
               </HeroContent>
             </HeroContainer>
-        </Grid>
-        </Grid>
-        <Grid item xs={12} md={7} sx={{ backgroundColor: "#FAE4CD" }}
-          style={{display: "flex", justifyContent: "center", alignItems: "left"}}
-        >
-          {RightSubSectionJSX}
-          
+          </Grid>
+          <Grid item xs={12} md={6} sx={{ backgroundColor: "#FAE4CD" }} style={{ display: "flex", justifyContent: "center", alignItems: "left" }}>
+            {RightSubSectionJSX}
+          </Grid>
         </Grid>
       </Box>
     </>
   );
-};
-
+}  
 export default HeroSection;

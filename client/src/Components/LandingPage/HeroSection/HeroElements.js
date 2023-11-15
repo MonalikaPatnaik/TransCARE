@@ -8,7 +8,6 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: left;
     text-align: left; /* Adjusted to align text to the left */
-    padding: 0 30px;
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -69,31 +68,48 @@ export const HeroContent = styled.div`
 `
 
 export const HeroH1 = styled.h1`
-    /* color: #fff;
-    font-size: 32rem;
-     */
-    text-align: left;
-    margin-bottom: 30px;
-    //font-family: 'Poppins', sans-serif;
-    font-family: 'Exo 2', sans-serif;
-    color: #FFFDFA;
-    font-style: normal;
-    font-size: 64px;
-    line-height: 0.7;
+  text-align: left;
+  margin-bottom: 30px;
+  font-family: 'Exo 2', sans-serif;
+  color: #00008B;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 0.7;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  display: inline-block;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 100%;
+    shape-outside: ellipse(50% 100% at 0% 50%);
+    float: left;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 100%;
+    shape-outside: ellipse(50% 100% at 100% 50%);
+    float: right;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
     font-weight: 600;
-    color: white;
-    
+  }
 
-    @media screen and (max-width: 768px){
-        font-size: 50px;
-        font-weight:600;
-    }
+  @media screen and (max-width: 480px) {
+    font-size: 43px;
+    font-weight: 600;
+  }
+`;
 
-    @media screen and (max-width: 480px){
-        font-size: 43px;
-        font-weight:600;
-    }
-`
+
 export const HeroD = styled.span`
     color: #FFC640;
     //font-family: 'Poppins', sans-serif;
