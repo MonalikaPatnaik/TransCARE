@@ -7,36 +7,52 @@ import Kashish from '../../images/Contributor-4.jpeg'
 
 
 
-const Contributors = styled.section`
-  padding: 30px;
-  background-color: #FFD1D1;
-  text-align: center;
+const Contributors = styled.div`
+background-color: #FAE4CD;
+text-align: center;
+width: auto;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 30px;
 `;
 
 const Title = styled.h2`
   font-size: 42px;
   color: #000000;
   margin-bottom: 48px;
+  margin-top: 0; /* Add this line to set top margin to 0 */
+  align-items: center;
+  justify-content: center;
 `;
 
 const ContributorGrid = styled.div`
+  align-items: center;
+  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: auto;
   gap: 24px;
 `;
 
 const ContributorBox = styled.div`
-  padding: 14px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
+  padding: 20px; /* Increased padding for a larger clickable area */
+  height: 350px;
+  width: 300px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
   background-color: #ffffff;
+  gap: 20vh;
+  transition: all 0.3s ease-in-out; /* Adjusted transition timing for smoother effect */
   &:hover {
-    transform: scale(1.05);
-    transition: all 0.2s ease-in-out;
+    transform: scale(1.1); /* Increased scale for a more noticeable effect */
+    box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.3); /* Adjusted box-shadow on hover */
     cursor: pointer;
   }
 `;
+
 
 const Image = styled.img`
   width: 250px;
@@ -59,6 +75,7 @@ const Paragraph = styled.p`
 
 const ContributorsSection = () => {
   return (
+    <>
     <Contributors>
       <Title>Contributors</Title>
       <ContributorGrid>
@@ -84,16 +101,9 @@ const ContributorsSection = () => {
             cursus cursus.
           </Paragraph>
         </ContributorBox>
-        <ContributorBox>
-          <Image src={Kashish} alt="Contributor Icon" />
-          <Heading>Contributor 3</Heading>
-          <Paragraph>
-            Quisque sit amet risus ut metus consectetur feugiat. Morbi facilisis justo ut
-            cursus cursus.
-          </Paragraph>
-        </ContributorBox>
       </ContributorGrid>
     </Contributors>
+    </>
   );
 };
 
