@@ -1,23 +1,33 @@
-![image](https://github.com/Mansi168/TransCare/assets/94298791/59348087-0bcf-4c93-aee4-1ccc3cdaf3fd)
+<div align="center">
+ <img src="https://github.com/MonalikaPatnaik/TransCARE/assets/99353300/a09aaafa-a7e5-471b-b00a-b5bbd083afc6">
+</div>
+<!-- ![Your Journey, Our Priority](https://github.com/MonalikaPatnaik/TransCARE/assets/99353300/a09aaafa-a7e5-471b-b00a-b5bbd083afc6) -->
 
-## Introduction
+# TransCARE - Your Journey, Our Priority
 
 <table style="border: none;">
   <tr>
-    <td>This initiative is dedicated to fostering an inclusive and supportive environment that empowers individuals from marginalized genders to access information, discuss, and explore topics related to sexual health and their community life experiences. We acknowledge the challenges and difficulties faced by marginalized genders in society, and we are dedicated to promoting knowledge, awareness, and empowerment within these communities..</td>
+    <td>TransCARE is an initiative committed to providing support and inclusivity for marginalized genders, specifically transgenders by offering them valuable resources, fostering meaningful connections, and encouraging self-acceptance. It aims to create a supportive and enriching environment for the transgender community, fostering personal growth, connection, and empowerment.
+</td>
     <td><img src="https://media4.giphy.com/media/fYNy092DoKNpshv70U/giphy.gif?cid=ecf05e47lz7igg6cy6tfa9s1w1gq5j11vqulnd8umgl51nrl&ep=v1_gifs_search&rid=giphy.gif&ct=g"/></td>
   </tr>
 </table>
 
 
 
-## Inspiration
+# Mission
  <tr>
-    <td>Recognizing and addressing the needs of marginalized genders is crucial for upholding human rights, promoting social justice, and fostering inclusive societies. Marginalized genders encompass a diverse range of individuals whose gender identities or expressions are not widely accepted or recognized within traditional societal norms.</td>
+    <td>The mission of the project is to create an empowering online platform that facilitates access to information, community engagement, and open discussions. TransCARE believes that everyone, regardless of their gender identity, deserves to have their voice heard, respected, and celebrated. 
+</td>
     
   </tr>
 
-## Components of Website
+  # Table of Contents
+- [Components of the Application (With Screenshots)](#components-of-the-application)
+- [Technology Stack Used](#technology-stack-used)
+- [Try The Web Application](#try-the-web-application)
+
+# Components of the Application
 <tr>
 <td>By creating TransCare, a web application that provides an online library and forum for connecting individuals of marginalized genders, we are taking a significant step towards addressing systemic barriers and biases. TransCare aims to foster a more equitable and harmonious world by offering the following:</td>
   
@@ -51,14 +61,8 @@
   
   ![pride-lgbt](https://github.com/Mansi168/TransCare/assets/94298791/0f7d1ee6-d9c8-4579-a89e-4bb6e0fbcdc9)
 
-## How we built it
-Building the TransCare web application involved a systematic approach encompassing various development stages. Here's an overview of the process:
 
-1. Planning and Conceptualization: The first step was to define the goals and objectives of the TransCare web app. This included identifying the target audience, determining the core features and functionalities, and mapping out the overall user experience. Thorough planning and research were conducted to ensure that the web app would effectively serve the needs of marginalized genders.
-2. Design and User Interface: The next phase involved designing the web app's user interface (UI) and user experience (UX). This encompassed creating wireframes, prototypes, and mockups to visualize the layout, navigation, and overall aesthetics. Design considerations included accessibility, visual inclusivity, and intuitive navigation to provide an inclusive and user-friendly experience.
-3. Front-end Development: Front-end development involves translating the design concepts into a functional web application. This included writing HTML, CSS, and JavaScript, and ReactJs code to implement the user interface, navigation, and interactivity. Front-end frameworks, libraries, and tools were utilized to enhance the development process and ensure a responsive and optimized experience across different devices and screen sizes.
-
- ## <center> Technology Stack Used </center>
+ #  Technology Stack Used 
 
 <div align="center">
  <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white">
@@ -68,7 +72,7 @@ Building the TransCare web application involved a systematic approach encompassi
  <img src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge">
 </div>
 
-
+# Try The Web Application
 
  ## <center> Contributors </center>
 
