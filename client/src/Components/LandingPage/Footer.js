@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import logo from "../../images/logo.png";
 import { LocationOn, Phone, Mail, Twitter, Facebook, YouTube, LinkedIn, Email } from '@mui/icons-material';
@@ -13,39 +13,53 @@ import {
   FooterLink,
   SocialLogo,
   WebsiteRights, 
+  Footerbg
 } from "./FooterElements";
 
 const Footer = () => {
   const handleClick = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
+  const [isActive, setIsActive] = useState(false);
+  const removeActive = () => {
+    setIsActive(false)
+  }
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      removeActive();
+    }
+  };
 
   return (
+    <>
+    <Footerbg>.</Footerbg>
     <FooterContainer>
       <FooterWrap>
         <FooterLinksContainer>
           <FooterLinksWrapper>
           
             <FooterLinkItems>
-  <FooterLinkTitle>Our Office</FooterLinkTitle>
+  <FooterLinkTitle>Our Contacts</FooterLinkTitle>
   <FooterLinkItems>
-  <ListItem>
+  <ListItem >
       <ListItemIcon>
-        <LocationOn style={{ marginRight: '0.5rem',color:' #f7bd00' }} />
+        <LocationOn style={{ marginRight: '0.5rem',color:' #FDA5A4' }} />
       </ListItemIcon>
-      <ListItemText primary="IGDTUW, Kashmere Gate, ND-India" />
+      <ListItemText primary="ABCDEF, Rohini, ND-India" />
     </ListItem>
     <ListItem>
       <ListItemIcon>
-        <Phone style={{ marginRight: '0.5rem',color:' #f7bd00' }} />
+        <Phone style={{ marginRight: '0.5rem',color:' #FDA5A4' }} />
       </ListItemIcon>
       <ListItemText primary="+012 345 67890" />
     </ListItem>
     <ListItem>
       <ListItemIcon>
-        <Mail style={{ marginRight: '0.5rem',color:' #f7bd00' }} />
+        <Mail style={{ marginRight: '0.5rem',color:' #FDA5A4' }} />
       </ListItemIcon>
-      <ListItemText primary="agrotechiam354@gmail.com" />
+      <ListItemText primary="abcdef@gmail.com" />
     </ListItem>
   </FooterLinkItems>
 </FooterLinkItems>
@@ -55,25 +69,26 @@ const Footer = () => {
   <FooterLinkTitle>Quick Links</FooterLinkTitle>
   <FooterLinkItems>
   <ListItem>
+      <FooterLink onClick={()=> scrollToSection('about')}>
+        <ListItemText primary="About" />
+      </FooterLink>
+    </ListItem>
+  <ListItem>
       <FooterLink to="/contact">
         <ListItemText primary="Contact" />
       </FooterLink>
     </ListItem>
     <ListItem>
-      <FooterLink onClick={handleClick}className="footer-link">
+      <FooterLink onClick={()=> scrollToSection('featureSection')}className="footer-link">
         <ListItemText primary="Services" />
       </FooterLink>
     </ListItem>
-    <ListItem>
-      <FooterLink to="/develop" className="footer-link">
-        <ListItemText primary="Destinations" />
-      </FooterLink>
-    </ListItem>
-    <ListItem>
+   
+    {/* <ListItem>
       <FooterLink to="/donate" className="footer-link">
         <ListItemText primary="Support and Donate" />
       </FooterLink>
-    </ListItem>
+    </ListItem> */}
   </FooterLinkItems>
 </FooterLinkItems>
            
@@ -102,6 +117,7 @@ const Footer = () => {
             </WebsiteRights>
       </FooterWrap>
     </FooterContainer>
+    </>
   );
 };
 

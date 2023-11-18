@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Library from '../../images/Library_image.jpg'
-import CommunityForum from '../../images/forum.jpg'
+import CommunityForum from '../../images/heroimg.png'
 import GovtPolicies from '../../images/policies.jpg'
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -14,23 +14,14 @@ const Services = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FAE4CD;
-
-  @media screen and (max-width: 768px) {
-    height: 1400px;
-  }
-  @media screen and (max-width: 992px) {
-    height: 1200px;
-  }
-  @media screen and (max-width: 480px) {
-    height: 1500px;
-  }
 `;
 
 const Title = styled.h2`
   font-size: 42px;
-  color: #00008B;
+  color: #ff6d6b;
+  font-weight:700;
   margin-bottom: 48px;
+  text-shadow: 1px 1px 1px rgb(43 57 74);
 `;
 
 const ServiceGrid = styled.div`
@@ -55,6 +46,7 @@ const ServiceCard = styled.div`
   align-items: center;
   display: flex;
   background-color: #F5F0F0;
+  border: 2px solid #FDA5A4;
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 10px;
@@ -97,14 +89,14 @@ const Paragraph = styled.p`
 const Button = styled.button`
   padding: 12px 24px;
   font-size: 18px;
-  background: linear-gradient(114.9deg, rgb(14 16 39) 8.3%, rgb(16 122 175) 41.6%, rgb(4 70 102) 93.4%);
-  color: #F5F0F0;
+  background: #2B394A;
+  color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 
   &:hover {
-    background: rgb(16 122 175);
+    background: #ff6d6b;
   }
 `;
 
@@ -112,7 +104,7 @@ const ServicesSection = () => {
   const { isAuthenticated, loginWithRedirect } = useAuth0();
   return (
     <Services id="featureSection">
-      <Title>Our Services</Title>
+      <Title>OUR SERVICES</Title>
       <ServiceGrid>
         <ServiceCard>
           

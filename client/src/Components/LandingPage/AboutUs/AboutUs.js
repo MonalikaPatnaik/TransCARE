@@ -1,10 +1,10 @@
 import { Box, Typography, ButtonBase, Button, Grid } from "@mui/material";
 import React from "react";
-import heart from "../../../images/heart.png";
+import heart1 from "../../../images/heart1.png";
 import "../AboutUs/AboutUs.css";
 const AboutUs = () => {
   return (
-    <Box
+    <Box id='about'
       sx={{
         display: "flex",
         flexDirection: { base: "column-reverse", md: "row", lg: "row" },
@@ -12,10 +12,10 @@ const AboutUs = () => {
         alignItems: "center",
         justifyContent: "center",
         backgroundSize: "cover",
-        backgroundColor: "#FAE4CD",
+        backgroundColor: "#fff",
         backgroundBlendMode: "overlay",
         color: "white",
-        filter: "drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.25))",
+        filter: "drop-shadow(0px 7px 4px rgba(0, 0, 0, 0))",
       }}
     >
       <Box
@@ -27,6 +27,7 @@ const AboutUs = () => {
           height: '100%',
           pointerEvents: 'none', 
           zIndex:-1,
+          borderRadius:"30px",
         }}
       >
         <div className="circle1"/>
@@ -51,18 +52,23 @@ const AboutUs = () => {
         sx={{
           mx: { xs: 3, md: 7 },
           my: 14,
-          py: 10,
-          px: { xs: 6, md: 16 },
+          py: 8,
+          px: { xs: 4, md: 10 },
           maxW: "1100px",
           backdropFilter: "blur(50px) backdropSaturate(200%)",
-          background: "linear-gradient(45deg, #164863, #1F2F32)",
-          borderRadius: "29px",
+          background: "linear-gradient(#fff 0 0) padding-box, linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red) border-box",
+          // backgroundImage: `url(${heroimg})`,
+          border: "3px solid transparent",
+          borderRadius:"29px",
           overflow: "hidden",
           textAlign: "left",
-          color: "white",
+          color: "#000",
           display: "flex",
           flexDirection: "column",
           height: "auto", 
+          
+    // backgroundPosition: "left",
+    // backgroundRepeat: "no-repeat",
         }}
       >
 <Grid container spacing={2} >
@@ -74,45 +80,23 @@ const AboutUs = () => {
       <br /> 
   </Typography>
       <Typography variant="h2" fontWeight="bold" fontSize={{ xs: "18px", sm:"20px", md: "20px" }}>
-      Welcome to TransCare - Empowering Transgender Lives!
+      Welcome to TransCare - Empowering Lives!
 
          <br /> <br />
          </Typography>
-         <Typography variant="body1" fontWeight={200} fontSize={{ xs: "10px", sm:"10px", md: "15px" }}>
-           At TransCare, we are dedicated to providing a supportive and inclusive online platform for the transgender 
-          community. Our purpose is to empower transgender individuals by offering resources, fostering connection, 
-           and promoting self-acceptance.We believe in creating a world where transgender voices are heard, respected,
-          and celebrated. is a one and all platform for you to help you out in quitting smoking and drinking by 
-           providing personalized consultations and medications making you a step closer to leading a healthy life.
+         <Typography variant="body1" fontWeight={200} fontSize={{ xs: "12px", sm:"12px", md: "17px" }} fontFamily="Georgia">
+         TransCARE is an initiative committed to providing support and inclusivity for marginalized genders, specifically transgenders by offering them valuable resources, fostering meaningful connections, and encouraging self-acceptance. The mission of the project is to create an empowering online platform that facilitates access to information, community engagement, and open discussions. TransCARE believes that everyone, regardless of their gender identity, deserves to have their voice heard, respected, and celebrated. 
+
            <br/><br/>
-           Our aim is to inspire, challenge and motivate passionate innovators, especially women, 
-           to pursue their careers in Open Source and develop solutions to current world problems. 
-           We believe that together we can make a difference. Participants can work on numerous projects 
-           under our guidance. Our skilled mentors will help all the participants in nurturing and 
-           polishing their technical skills and contributing to various projects from the comfort of 
-           their homes over our fifty-day contribution period.
+           Our aim is to create a supportive and enriching environment for the transgender community, fostering personal growth, connection, and empowerment.
+
            <br/> <br/>
-           Join us at TransCare 🏳️‍🌈to Open up about Homosexuality  
+           Join us at TransCare 🏳️‍🌈 to Open up about Homosexuality  
             by contributing, inspiring and 
            empowering every individual!
          </Typography>
     </Grid>
     <Grid item>
-    {/* <Button
-        variant="contained"
-        href="registrationlink.."
-        sx={{
-          backgroundColor: "#648E9B",
-
-          color: 'white',
-          "&:hover": {
-            backgroundColor: "#111B1E", 
-            boxShadow: '0px 2px 2px rgba(150, 150, 150, 0.5)',        
-          },
-        }}
-      >
-        Register
-  </Button> */}
     </Grid>
 </Grid>
 <Grid item sx={{
@@ -121,14 +105,25 @@ const AboutUs = () => {
   justifyContent: 'center',
 }}>
   <ButtonBase  sx={{
-            backgroundImage: `url(${heart})`,
+            backgroundImage: `url(${heart1})`,
              backgroundSize: "cover",
              backgroundBlendMode: "overlay",
              borderRadius: {xs:"9px", sm:"19px", md:"29px"},
              height: {xs:"40vh", sm:"40vh", md:"50vh"},
              width: {xs:"40vh", sm:"40vh", md:"50vh"},
              marginLeft: { xs: 0, md: "20px" }, 
-             marginTop: { xs: "20px", md: 0 },
+             animation: "scale 2.5s ease-in-out infinite",
+    '@keyframes scale': {
+      '0%': {
+        transform: 'scale(1)',
+      },
+      '50%': {
+        transform: 'scale(1.1)',
+      },
+      '100%': {
+        transform: 'scale(1)',
+      },
+    },
            }}
          />
 </Grid>

@@ -68,13 +68,13 @@ export const HeroContent = styled.div`
 `
 
 export const HeroH1 = styled.h1`
-  text-align: left;
-  margin-bottom: 30px;
+  text-align:center;
+  margin-bottom: 50px;
   font-family: 'Exo 2', sans-serif;
   color: #00008B;
   font-style: normal;
   font-size: 34px;
-  line-height: 0.7;
+  line-height: normal;
   font-weight: 600;
   color: white;
   position: relative;
@@ -121,35 +121,31 @@ export const HeroP = styled.p`
   max-width: 640px;
   margin-top: 1.5rem;
   box-sizing: border-box;
-  //font-family: 'Poppins', sans-serif;
-  font-family: 'Exo 2', sans-serif;
+  font-family: Georgia;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 30px;
+  line-height: 33px;
   text-align: left;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 198, 64, 0.6) 0%,
-    rgba(242, 175, 19, 0.6) 100%
-  );
+  background: indigo;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+ /* text-transform:uppercase; */
+ text-align:center;
 
   @media screen and (max-width: 1024px) {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 26px;
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
   }
 `;
@@ -167,11 +163,9 @@ export const HeroBtnWrapper = styled.div`
 
 export const Heroimg = styled.img`
 height:40px;
-widht:40px;
 margin-right: 10px;
 outline: none;
 border: none;
-curson: pointer;
 display: flex;
 justify-content: center;
 align-items: center;

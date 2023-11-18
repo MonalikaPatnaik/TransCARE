@@ -7,7 +7,7 @@ import img from '../../images/about.png';
 
 const AboutContainer = styled.div`
     color: var(--text-clr);
-    background: #FAE4CD;
+    background: "white";
 
     @media screen and (max-width: 768px){
         padding: 100px 0;

@@ -21,15 +21,20 @@ import styled from "styled-components";
 
 const Button = styled.button`
 padding: 12px 24px;
-font-size: 18px;
-background: linear-gradient(114.9deg, rgb(14 16 39) 8.3%, rgb(16 122 175) 41.6%, rgb(4 70 102) 93.4%);
-color: #F5F0F0;
+font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 22px;
+background: #FDA5A4;
+color: #000;
 border: none;
 border-radius: 14px;
 cursor: pointer;
 
 &:hover {
-  background: rgb(16 122 175);
+  background: #2B394A;
+  color:#fff;
+  text-decoration:underline;
 }
 `;
 const Navbar = () => {
@@ -78,17 +83,17 @@ const Navbar = () => {
     <>
       <Nav
         style={{
-          backgroundColor: scrollPosition > 0 ? "#FAE4CD" : "#FAE4CD",
+          background: "#2B394A",
         }}
       >
         <NavbarContainer>
           <NavImg>
             <Link to="/" onClick={handleLogoClick}>
-              <img src={logo} height={54} alt="Logo" />
+              <img src={logo} height={56} alt="Logo" />
             </Link>
             <NavLogo>
-               TansCare
-              <SubLogo>Care like Parent</SubLogo>
+               TransCARE
+              <SubLogo>YOUR JOURNEY. OUR PRIORITY</SubLogo>
             </NavLogo>
           </NavImg>
 
@@ -102,13 +107,18 @@ const Navbar = () => {
               </NavLinks>
             </Navitem>
             <Navitem>
-              <NavLinks to="#" onClick={handleLogoClick}>
+              <NavLinks onClick={()=> scrollToSection('about')}>
                About
+              </NavLinks>
+            </Navitem>
+            <Navitem>
+              <NavLinks to="/contact" onClick={handleLogoClick}>
+               Contact
               </NavLinks>
             </Navitem>
 
             <Navitem className="custom">
-              <NavLinks to="#" onClick={handleLogoClick}>
+              <NavLinks onClick={()=> scrollToSection('featureSection')}>
                 Features
               </NavLinks>
             </Navitem>

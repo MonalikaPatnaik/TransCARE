@@ -13,7 +13,6 @@ position: sticky;
 height: 80px;
 top: 0;
 z-index: 19;
-color: #FAF0CD;
 
 overflow-y: hidden;
   overflow-x: auto;
@@ -54,7 +53,7 @@ flex-grow: 0;
 export const NavLogo = styled.div`
   height: auto;
   width: auto;
-  color: #00008B;
+  color: #fff;
   justify-self: flex-start;  
   font-size: 2rem;
   display: flex;
@@ -110,14 +109,14 @@ flex-grow: 0;
     top: ${({ isOpen }) => (isOpen ? '80px' : '-41vh')};
     left: 0;
     transition: 0.3s ease-in-out;
-    background-color: #0D0A03;
+    background-color: #2B394A;
 
   }
 
 `
 export const SubLogo = styled.span`
 font-size: 0.7rem; /* Adjust the font size as per your preference */
-color: #00008B;
+color: #fff;
 @media screen and  (max-width: 468px){
   font-size: 8px;
 }
@@ -133,20 +132,12 @@ color: #00008B;
   // color: #FFF;
   // text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 
-  // background: linear-gradient(45deg, #000000, #1c1b19);
-  // border-radius: 1px;
-
-  // flex: none;
-  // order: 1;
   // flex-grow: 0;
 `;
 
 export const Navitem = styled.li`
  
 box-sizing: border-box;
-
-/* Auto layout */
-
 display: flex;
 justify-content: center;
 flex-direction: row;
@@ -157,20 +148,16 @@ gap: 10px;
 border:0.5px solid #FAE4CD;
 width:120px;
 height: 34px;
-
-background: linear-gradient(45deg, #FAE4CD, #FAE4CD );
 border-radius: 22px;
-
+color: #fff;
 /* Inside auto layout */
 
 flex: none;
 order: 0;
 flex-grow: 0;
 &:hover {
-  background: linear-gradient(45deg, #00008B, #00008B);
-  border: 0.5px solid #00008B;
-  color: #00008B;
-  text-color: ##FAE4CD;
+  background: #FDA5A4;
+  color: #000; 
 }
 
 &.custom {
@@ -185,7 +172,7 @@ height: 200x;
 display: flex;
 align-items: flex-start;
 flex-direction: row;
-padding-left: 50px;
+padding-left: 40px;
 margin-right: auto; /* Pushes the container to the left */
 ${'' /* margin-bottom: 20px; */}
 flex: none;
@@ -206,7 +193,7 @@ export const NavLinks = styled(LinkR)`
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 22px;
-  color: #00008B;
+  color: #fff;
   ${'' /* flex: none; */}
   align-items: center;
   justify-content: center;
@@ -218,6 +205,6 @@ export const NavLinks = styled(LinkR)`
   }
 
   &:hover {
-    color: #FAE4CD;
+    color: #000;
   }
 `;
