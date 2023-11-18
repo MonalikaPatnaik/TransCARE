@@ -21,7 +21,7 @@ padding: 30px;
 
 const Title = styled.h2`
   font-size: 42px;
-  color: #000000;
+  color: #00008B;
   margin-bottom: 48px;
   margin-top: 0; /* Add this line to set top margin to 0 */
   align-items: center;
@@ -62,13 +62,13 @@ const Image = styled.img`
 
 const Heading = styled.h3`
   font-size: 24px;
-  color: #000000;
+  color: #164863;
   margin: auto;
 `;
 
 const Paragraph = styled.p`
   font-size: 18px;
-  color: #000000;
+  color: #00008B;
   margin: auto;
 `;
 

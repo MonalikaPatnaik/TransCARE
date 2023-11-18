@@ -29,12 +29,12 @@ const Services = styled.section`
 
 const Title = styled.h2`
   font-size: 42px;
-  color: #000000;
+  color: #00008B;
   margin-bottom: 48px;
 `;
 
 const ServiceGrid = styled.div`
-max-width: 1000px;
+width: auto;
 margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
@@ -52,24 +52,27 @@ padding: 0 30px;
 `;
 
 const ServiceCard = styled.div`
-align-items: center;
-display: flex;
-background-color: #F5F0F0;
-flex-direction: column;
-justify-content: flex-start;
-border-radius: 10px;
-max-height: 380px;
-padding: 30px;
-box-shadow: 0 1px 3px gray;
-color: var(--text-clr);
-transition: all 0.2s ease-in-out;
+  align-items: center;
+  display: flex;
+  background-color: #F5F0F0;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  height: 400px;
+  width: 350px;
+  margin: 20px; /* Increased margin for a larger gap between cards */
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted box-shadow for a subtle effect */
+  color: var(--text-clr);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
-&:hover {
-  transform: scale(1.02);
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
+  &:hover {
+    transform: scale(1.05); /* Increased scale for a more pronounced hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow on hover */
+    cursor: pointer;
+  }
 `;
+
 
 const Image = styled.img`
 height: 170px;
