@@ -9,8 +9,6 @@ import Navbar from './Components/LandingPage/Navbar';
 import BookDetails from "./Components/BookDetails/BookDetails";
 import Loading from './Components/Loader/Loader';
 import BookList from "./Components/BookList/BookList";
-import SigninPage from './Pages/SignIn';
-import SignupPage from './Pages/Signup';
 import ContactPage from './Pages/contact';
 import Scholarlist from './Pages/scholarlist';
 import Profile from './Pages/profile';
@@ -40,8 +38,6 @@ function App() {
             <Route path="/library" element={<Library />} />
             <Route path="/book" element={<BookList />} />
             <Route path="/book/:id" element={<BookDetails />} />
-            <Route path="/signin" element={<SigninPage />} />
-        <Route path="/signup" element={<SignupPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/scholarships" element={<Scholarlist />} />
         <Route path="/profile" element={<Profile />} />

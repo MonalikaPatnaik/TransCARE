@@ -18,7 +18,8 @@ const Book = (props) => {
 
           <div className='book-item-info-item author fs-15'>
             <span style={{ color: 'black' }} className='text-capitalize fw-7'>Author: </span>
-            <span style={{ color: 'black' }}>{author.join(", ")}</span>
+            <span style={{ color: 'black' }}>{author?.join(", ") ?? "No Author"}</span>
+
           </div>
 
           <div className='book-item-info-item edition-count fs-15'>
