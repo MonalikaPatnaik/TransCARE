@@ -10,10 +10,13 @@ import {
   MobileIcon,
   NavLogo,
   SubLogo,
+  Dropdown,
+  Dropdowncontent,ButtonDropdown,
 } from "./NavbarElements";
 import { Link } from "react-router-dom";
-import Dropdown from 'rsuite/Dropdown'; 
+// import Dropdown from 'rsuite/Dropdown'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { useAuth0 } from "@auth0/auth0-react";
 import logo from "../../../images/logo.png";
@@ -41,6 +44,10 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
   const { loginWithRedirect, isAuthenticated,logout } = useAuth0();
   const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const dropdownTitleStyle = {
@@ -124,16 +131,23 @@ const Navbar = () => {
             </Navitem>
             {isAuthenticated ? (
                <li>
-   <Dropdown title="My Profile" icon={<FontAwesomeIcon icon={faUser} style={{ color: '#fff' }}  />} appearance="default" style={dropdownTitleStyle}>
-    <Dropdown.Item onClick={removeActive}><a href='/profile'> User profile</a>
-     
-    </Dropdown.Item>
-    <Dropdown.Item>
-    <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+   <Dropdown>
+   <FontAwesomeIcon icon={faUser} style={{ color: '#fff' }}/>
+    <ButtonDropdown onClick={toggleDropdown}>Account
+    <FontAwesomeIcon icon={faCaretDown}  style={{ color: '#fff' }} />
+    </ButtonDropdown>
+    {isOpen && (
+    <Dropdowncontent>
+      <a href="/profile">User Profile</a>
+      <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}style={{
+        fontSize:'16px', fontWeight: '600'
+      }}>
      Log Out
    </button>
-    </Dropdown.Item>
-   </Dropdown>
+    </Dropdowncontent>
+    )}
+  </Dropdown>
+
              </li>
               ):(
             <li>
