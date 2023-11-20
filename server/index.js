@@ -26,7 +26,7 @@ app.use(cors());
                 const eligibilityText = eligibilitySection.find('.scholarshipslistcard_box__S_Oby').text().toLowerCase();
           
                 // Check if either title or eligibility contains the word "transgender"
-                if (scholarshipTitle.toLowerCase().includes('transgender') || eligibilityText.includes('transgender')) {
+                if (scholarshipTitle.toLowerCase().includes('girls') || eligibilityText.includes('girls')) {
                   const scholarshipLink = $(this).find('h4 a').attr('href');
                   scholarships.push({
                     title: scholarshipTitle,
