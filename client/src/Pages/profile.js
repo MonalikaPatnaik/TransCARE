@@ -6,7 +6,7 @@ import Profile from "../Components/Profile";
 const ProfilePage = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Profile />
      
     </>

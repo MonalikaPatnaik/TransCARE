@@ -48,7 +48,7 @@ flex-grow: 0;
 }
 `
 
-export const NavLogo = styled.div`
+export const NavLogo = styled(LinkR)`
   height: auto;
   width: auto;
   color: #fff;
@@ -59,7 +59,7 @@ export const NavLogo = styled.div`
   flex-direction:column; 
   margin-left: 6px;
   font-weight: bold;  
-  text-decoration: none;  
+  text-decoration: none; 
 `
 export const MobileIcon = styled.div`
   display: none;
@@ -113,24 +113,14 @@ flex-grow: 0;
 
 `
 export const SubLogo = styled.span`
-font-size: 0.7rem; /* Adjust the font size as per your preference */
+font-size: 0.9rem; /* Adjust the font size as per your preference */
 color: #fff;
 @media screen and  (max-width: 468px){
   font-size: 8px;
 }
 
-// margin-top: 0px;
-  // width: auto;
-  // height: 14px;
-  // display: flex;
-  // justify-content: flex-start;
-  //  margin-top: 0px; 
-  // font-weight: 100;
-  // font-size: 10px;
-  // color: #FFF;
-  // text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 
-  // flex-grow: 0;
+ 
 `;
 export const Dropdown=styled.div`
 /* overflow:hidden; */
@@ -203,8 +193,6 @@ flex-grow: 0;
 `
 
 export const NavImg = styled.div`
-width: 400px;
-height: 200x;
 display: flex;
 align-items: flex-start;
 flex-direction: row;

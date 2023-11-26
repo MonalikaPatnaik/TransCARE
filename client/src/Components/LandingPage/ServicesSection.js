@@ -52,15 +52,15 @@ const ServiceCard = styled.div`
   border-radius: 10px;
   height: 400px;
   width: 350px;
-  margin: 20px; /* Increased margin for a larger gap between cards */
+  margin: 20px;
   padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted box-shadow for a subtle effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   color: var(--text-clr);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.05); /* Increased scale for a more pronounced hover effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
   }
 `;

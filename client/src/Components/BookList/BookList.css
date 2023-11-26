@@ -1,6 +1,6 @@
 .booklist, .book-details{
     padding: 3rem 0;
-    background:linear-gradient(114.9deg, rgb(14 16 39) 8.3%, rgb(16 122 175) 41.6%, rgb(4 70 102) 93.4%);
+    background: linear-gradient(135deg, #2B394A 0%, #30404F 100%);
 }
 .booklist-content{
     gap: 3rem;
@@ -9,9 +9,10 @@
     margin:35px;
     background: white;
     border-radius: 50px;
+    border:5px solid #FDA5A4;
     display: flex;
     flex-direction: column;
-    padding:1rem;
+    padding:2rem;
 }
 .title1{
     text-align: center;
@@ -19,15 +20,12 @@
     font-size: 2rem;
 };
 
-.book-item{
-    padding: 4rem 2rem;
-    border-radius: 4px;
-    background-color: var(--white-color);
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px 0px;
-    transition: var(--transition);
-}
 .book-item:hover{
-    box-shadow: rgba(0, 0, 0, 0.18) 0px 5px 15px 0px;
+
+      transform: scale(1.05); 
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+      cursor: pointer;
+    
 }
 .book-item-img img{
     max-width: 180px;

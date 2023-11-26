@@ -94,15 +94,26 @@ const Navbar = () => {
         }}
       >
         <NavbarContainer>
-          <NavImg>
-            <Link to="/" onClick={handleLogoClick}>
-              <img src={logo} height={56} alt="Logo" />
-            </Link>
-            <NavLogo>
-               TransCARE
-              <SubLogo>YOUR JOURNEY. OUR PRIORITY</SubLogo>
-            </NavLogo>
-          </NavImg>
+        {/* <NavImg>
+      <Link to="/" onClick={handleLogoClick}>
+        <img src={logo} height={56} alt="Logo" />
+        <NavLogo>
+          TransCARE
+          <SubLogo>YOUR JOURNEY. OUR PRIORITY</SubLogo>
+        </NavLogo>
+      </Link>
+    </NavImg> */}
+    <NavImg>
+              <img src={logo}
+                alt="favicon"
+                width="56"
+                height="60"
+              />
+              <NavLogo to="/"  onClick={handleLogoClick}> TransCARE
+              <SubLogo>Your Journey, Our Priority</SubLogo>
+              </NavLogo>
+              
+            </NavImg>
 
           <MobileIcon onClick={toggle}>
             {isOpen ? <FaTimes /> : <FaBars />} {/* Close icon when open */}

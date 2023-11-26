@@ -103,8 +103,18 @@ input{
 .flex-sb{
   justify-content: space-between;
   padding:2rem;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px 0px;
-  transition: var(--transition);
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px 0px; */
+  background-color: #F5F0F0;
+  border: 2px solid #FDA5A4;
+  /* transition: var(--transition); */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
 }
 .flex-c{
   justify-content: center;
@@ -129,18 +139,15 @@ input{
   width: 12px; /* Set the width of the scrollbar */
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: #2196F3; /* Set the color of the scrollbar handle */
-  border-radius: 6px; /* Set the border radius of the scrollbar handle */
+  background-color: #FDA5A4; 
+  border-radius: 6px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Set the color of the scrollbar track */
+  background-color: #f1f1f1; 
 }
 
-/* Corner */
 ::-webkit-scrollbar-corner {
-  background-color: #fff; /* Set the color of the scrollbar corner (if needed) */
+  background-color: #fff; 
 }

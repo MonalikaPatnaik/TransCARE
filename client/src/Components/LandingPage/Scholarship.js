@@ -72,6 +72,8 @@ const headingStyle = {
   marginBottom: '30px',
 };
 
+// ... (existing code)
+
 const ScholarshipComponent = () => {
   const [scholarships, setScholarships] = useState([]);
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -99,44 +101,49 @@ const ScholarshipComponent = () => {
   if (loading) {
     return <Loading />;
   }
-  
+
   return (
     <>
       <h1 style={headingStyle}>Scholarships</h1>
       <div style={cardContainerStyle}>
-        {scholarships.map((scholarship, index) => (
-          <div
-            key={index}
-            style={{
-              ...cardStyle,
-              
-              border: hoveredIndex === index ? '6px solid rgb(16 122 175)' : '5px solid rgb(76 166 211)',
-              // background:hoveredIndex===index?'#cfeeff':'white',
-              borderRadius:hoveredIndex === index ?'30px':'30px 0px 30px 0px',
-              transition: 'all 0.3s ease-out',
-            }}
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-          >
-            <div style={imgcontainer}>
-              <img src={imageUrl} alt="Scholarship" style={scholarshipImageStyle} />
+        {scholarships.length === 0 ? (
+          <p style={{ textAlign: 'center', fontSize: '1.5rem', marginTop: '50px' }}>
+            No scholarships found.
+          </p>
+        ) : (
+          scholarships.map((scholarship, index) => (
+            <div
+              key={index}
+              style={{
+                ...cardStyle,
+                border: hoveredIndex === index ? '6px solid rgb(16 122 175)' : '5px solid rgb(76 166 211)',
+                borderRadius: hoveredIndex === index ? '30px' : '30px 0px 30px 0px',
+                transition: 'all 0.3s ease-out',
+              }}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <div style={imgcontainer}>
+                <img src={imageUrl} alt="Scholarship" style={scholarshipImageStyle} />
+              </div>
+              <div style={container}>
+                <h3>{scholarship.title}</h3>
+                <a
+                  style={{
+                    ...buttonClass,
+                    background:
+                      hoveredIndex === index ? 'linear-gradient(#019ad2, #33bdef)' : 'linear-gradient(#33bdef, #019ad2)',
+                  }}
+                  href={scholarship.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apply Here
+                </a>
+              </div>
             </div>
-            <div style={container}>
-              <h3>{scholarship.title}</h3>
-              <a
-                style={{
-                  ...buttonClass,
-                  background: hoveredIndex === index ? 'linear-gradient(#019ad2, #33bdef)' : 'linear-gradient(#33bdef, #019ad2)',
-                }}
-                href={scholarship.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Apply Here
-              </a>
-            </div>
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </>
   );

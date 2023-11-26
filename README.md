@@ -59,7 +59,7 @@
 - The library offers curated content such as articles, books, videos, and media on sexual health, community experiences, and diverse topics.
 - Users can search and read the books and literature of their Choice
 
-![image](https://github.com/Mansi168/TransCare/assets/94298791/3180df1b-ced9-4274-a442-75c9b2447e63)
+![Screenshot 2023-11-20 002507](https://github.com/MonalikaPatnaik/TransCARE/assets/99353300/286f1eae-9e70-4dc3-9fd0-b8c6b00f8208)
 
 ## TransTalk
 - TransTalk serves as a dedicated online space for marginalized genders, promoting connections and discussions.

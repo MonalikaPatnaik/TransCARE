@@ -113,7 +113,7 @@ const Footer = () => {
             <FooterLogo src={logo}/> <SocialLogo onClick={handleClick}>TransCARE</SocialLogo>
             </FooterLinkItems>
             <WebsiteRights>
-              MilkDelights © {new Date().getFullYear()}&nbsp;All rights reserved.
+              TransCARE © {new Date().getFullYear()}&nbsp;All rights reserved.
             </WebsiteRights>
       </FooterWrap>
     </FooterContainer>
