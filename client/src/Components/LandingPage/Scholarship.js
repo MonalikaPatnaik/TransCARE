@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import imageUrl from '../../images/scholarhat.png';
+import imageUrl from '../../images/notfound.png';
 import Loading from '../Loader/Loader';
 
 const cardContainerStyle = {
@@ -8,6 +8,7 @@ const cardContainerStyle = {
   flex: '1 0 100%',
   padding: '20px',
   margin: '100px 140px',
+  marginTop:'0px',
 };
 
 const container = {
@@ -65,9 +66,9 @@ const scholarship_container={
   marginTop:'0px',
 }
 const headingStyle = {
-  
+  // fontSize:'50px',
   textTransform:'uppercase',
-  marginTop:'0px' ,
+  marginTop:'30px' ,
   textAlign: 'center',
   marginBottom: '30px',
 };
@@ -107,9 +108,10 @@ const ScholarshipComponent = () => {
       <h1 style={headingStyle}>Scholarships</h1>
       <div style={cardContainerStyle}>
         {scholarships.length === 0 ? (
-          <p style={{ textAlign: 'center', fontSize: '1.5rem', marginTop: '50px' }}>
-            No scholarships found.
-          </p>
+           <div style={{ textAlign: 'center',display:'flex',alignItems: 'center', justifyContent: 'center' }}>
+           <img src={imageUrl} alt="No scholarships found" />
+           <h2>No scholarships found</h2>
+         </div>
         ) : (
           scholarships.map((scholarship, index) => (
             <div
