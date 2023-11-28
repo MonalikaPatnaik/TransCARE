@@ -36,7 +36,7 @@
 - [Components of the Application (With Screenshots)](#components-of-the-application)
 - [Key Features](#key-features)
 - [Technology Stack Used](#technology-stack-used)
-- [Watch Demo](#watch-demo)
+<!-- - [Watch Demo](#watch-demo) -->
 
 # Components of the Application
 <tr>
@@ -96,7 +96,7 @@ Accessibility Menu from UserWay provides a set of features and options to ensure
  <img src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge">
 </div>
 
-# Watch Demo
+<!-- # Watch Demo -->
 
 ## <center> Contributors </center>
 
