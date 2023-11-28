@@ -51,6 +51,13 @@
 ## About 
 ![Screenshot 2023-11-20 003226](https://github.com/MonalikaPatnaik/TransCARE/assets/99353300/77e133b7-ddeb-417c-b5f8-966f70f920d4)
 
+## Contact Page
+![image](https://github.com/MonalikaPatnaik/TransCARE/assets/99353300/ba1d39ca-4cfd-4228-b0a6-768dff419e1a)
+
+## Login Form
+A beautiful Custom login form made from Auth0.
+![image](https://github.com/MonalikaPatnaik/TransCARE/assets/99353300/9d71eb60-12a4-47a3-b972-bdbbbd907888)
+
 # Key Features
 
 ## Transbookshelf
@@ -73,6 +80,10 @@
 - It's aim is to prevent users from missing out on valuable opportunities.
 
 ![Screenshot 2023-11-20 022032](https://github.com/MonalikaPatnaik/TransCARE/assets/99353300/9ff8a682-eb5e-42a0-8124-1bd57acf935b)
+
+## Accessibility Menu
+Accessibility Menu from UserWay provides a set of features and options to ensure that users with diverse needs and abilities can navigate and interact with the site effectively. 
+![image](https://github.com/MonalikaPatnaik/TransCARE/assets/99353300/1429bd9d-52d6-4dd7-b461-b6b7b187a347)
 
 
 #  Technology Stack Used 
