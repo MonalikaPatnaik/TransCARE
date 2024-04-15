@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Sneha from '../../images/Contributor-1.png';
 import Monalika from '../../images/Contributor-2.png'
 import Mansi from '../../images/contributor-3.jpg'
+import Aakanksha from '../../images/Aakanksha.jpg'
 
 
 const Contributors = styled.div`
@@ -29,7 +30,7 @@ const ContributorGrid = styled.div`
   width: auto;
 margin: 0 auto;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 align-items: center;
 grid-gap: 25px;
 padding: 0 30px;
@@ -46,7 +47,7 @@ padding: 0 30px;
 const ContributorBox = styled.div`
   padding: 20px; /* Increased padding for a larger clickable area */
   height: auto;
-  width: 300px;
+  width: 250px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
   border: 2px solid #FDA5A4;
   border-radius: 20px;
@@ -62,7 +63,7 @@ const ContributorBox = styled.div`
 
 
 const Image = styled.img`
-  width: 250px;
+  width: 200px;
   height: 180px;
   margin: 5px;
 `;
@@ -95,6 +96,10 @@ const ContributorsSection = () => {
         <ContributorBox>
           <Image src={Mansi}  />
           <Heading>MANSI JANGRA</Heading>
+        </ContributorBox>
+        <ContributorBox>
+          <Image src={Aakanksha}  />
+          <Heading>Aakanksha</Heading>
         </ContributorBox>
       </ContributorGrid>
     </Contributors>
