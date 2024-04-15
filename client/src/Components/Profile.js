@@ -38,7 +38,7 @@ const Profile = () => {
   return (
     <Container sx={{ marginTop: '10%', boxShadow: '0 .5rem 1rem rgba(0,0,0,.15)', marginRight: '10%', marginLeft: '10%', marginBottom: '20%', border: '2px solid #FDA5A4', paddingBottom: '50px', backgroundColor: '#FFF9C4' }}>
       {isAuthenticated && (
-        <Grid container spacing={3} sx={{ boxShadow: '0 .5rem 1rem rgba(0,0,0,.15)', textAlign: 'center', marginTop: '50px', paddingTop: '20px', marginLeft: '8%', marginRight: '8%', marginBottom: '2%', borderRadius: '20px', backgroundColor: '#F5F0F0', maxWidth: '100%' }}>
+        <Grid container spacing={3} sx={{ boxShadow: '0 .5rem 1rem rgba(0,0,0,.15)', textAlign: 'center', marginTop: '50px', paddingTop: '20px', marginLeft: '8%', marginRight: '8%', marginBottom: '2%', borderRadius: '20px', backgroundColor: '#F5F0F0', maxWidth: '50%' }}>
           {isSmallScreen ? (
             <Grid item xs={12} md={4}>
               <Grid item xs={12} sx={{ textAlign: 'center' }}>
