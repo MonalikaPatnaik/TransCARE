@@ -56,7 +56,8 @@
 
 ## Login Form
 A beautiful Custom login form made from Auth0.
-![image](https://github.com/MonalikaPatnaik/TransCARE/assets/99353300/9d71eb60-12a4-47a3-b972-bdbbbd907888)
+![image](https://github.com/MonalikaPatnaik/TransCARE/assets/94298791/00cc94c4-2cb6-42f2-ace3-aaa1a8f74527)
+
 
 # Key Features
 
@@ -100,4 +101,5 @@ Accessibility Menu from UserWay provides a set of features and options to ensure
 
 ## <center> Contributors </center>
 
-![Screenshot 2023-11-20 003310](https://github.com/MonalikaPatnaik/TransCARE/assets/99353300/7d65b182-164d-4f1b-8f66-0b8af3df6751)
+![image](https://github.com/MonalikaPatnaik/TransCARE/assets/94298791/bcdafd1c-4550-44ff-be1d-1d52f57d03e8)
+
