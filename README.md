@@ -99,7 +99,4 @@ Accessibility Menu from UserWay provides a set of features and options to ensure
 
 <!-- # Watch Demo -->
 
-## <center> Contributors </center>
-
-![image](https://github.com/MonalikaPatnaik/TransCARE/assets/94298791/bcdafd1c-4550-44ff-be1d-1d52f57d03e8)
 
